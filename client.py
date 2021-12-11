@@ -9,6 +9,7 @@ def app():
     request = RecommendationRequest(
         user_id=1, category=BookCategory.SCIENCE_FICTION, max_results=3
     )
+    client.Recommend(request)
 
 if __name__ == '__main__':
     app()
